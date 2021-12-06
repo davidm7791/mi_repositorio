@@ -36,7 +36,7 @@ header {
 nav {
   text-align: right;
   padding: 30px 50px 0 0;
-  font-size: 20px; }
+  font-size: 23px; }
 
 nav > a {
   color: #fff;
@@ -45,7 +45,8 @@ nav > a {
   margin-right: 10px; }
 
 nav > a:hover {
-  text-decoration: underline; }
+  text-decoration: none;
+  color: blueviolet; }
 
 header .textos-header {
   display: flex;
@@ -357,55 +358,3 @@ footer {
   display: flex;
   display: inline-block;
   max-width: 900px; }
-
-/*Botonera Seccion Contacto*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-.formulario {
-  width: 900px;
-  background: grey;
-  padding: 30px;
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 4px;
-  font-family: 'calibri';
-  color: white; }
-
-.formulario__titulo {
-  font-size: 22px;
-  margin-bottom: 20px; }
-
-.formulario__controles {
-  width: 100%;
-  background: #24303c;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid white;
-  font-family: 'calibri';
-  font-size: 18px;
-  color: white; }
-
-.formulario__parrafo {
-  height: 40px;
-  text-align: center;
-  font-size: 18px; }
-
-.formulario__enlace {
-  color: white;
-  text-decoration: none; }
-
-.formulario__enlace:hover {
-  color: white;
-  text-decoration: underline; }
-
-.formulario__controles--boton {
-  width: 100%;
-  background: #af20d3;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px; }

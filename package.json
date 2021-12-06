@@ -267,5 +267,13 @@
     "yargs-parser": "^20.2.9",
     "yargs": "^13.3.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmareco/mi_repositorio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidmareco/mi_repositorio/issues"
+  },
+  "homepage": "https://github.com/davidmareco/mi_repositorio#readme",
   "description": ""
 }

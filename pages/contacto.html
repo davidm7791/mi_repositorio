@@ -19,12 +19,33 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="./ambientes.html">Ambientes</a>
-      <a href="./tienda.html">Tienda</a>
-      <a href="./portafolio.html">Portafolio</a>
-      <a href="./contacto.html">Contacto</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="../index.html">Home</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../pages/ambientes.html">Ambientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../pages/tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../pages/portafolio.html">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
     </nav>
     <section class="textos-header">
       <h1>Contacto con la empresa</h1>
@@ -38,23 +59,74 @@
     </div>
   </header>
 
-  <section class="formulario">   <!-- BLOQUE -->
-    <h1 class="formulario__titulo">Ingrese tus datos y un asesor se comunicara con usted</h1>   <!-- ELEMENTO -->
-    <input class="formulario__controles" type="text" name="nombres" id="nombres" placeholder="Ingerese su Nombre">  <!-- ELEMENTO -->
-    <input class="formulario__controles" type="text" name="apellidos" id="apellidos" placeholder="Ingerese su Apellido">   <!-- ELEMENTO -->
-    <input class="formulario__controles" type="email" name="correo" id="correo" placeholder="Ingerese su Correo">  <!-- ELEMENTO -->
-    <input class="formulario__controles" type="password" name="correo" id="correo" placeholder="Ingerese su Contraseña">  <!-- ELEMENTO -->
-    <p class="formulario__parrafo">  <!-- ELEMENTO -->
-      <a class="formulario__enlace" href="#">Terminos y Condiciones</a>  <!-- ELEMENTO -->
-    </p>
-    <input class="formulario__controles--boton" type="submit" value="Registrar"> <!-- MODIFICADOR -->
-    <p class="formulario__parrafo"><a href="#">Ayuda</a></p>
-  </section>
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="validationCustom01" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="validationCustom02" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustomUsername" class="form-label">Email</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">Ciudad</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">Barrio</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Elegir...</option>
+        <option>Capital Federal</option>
+        <option>Provincia</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom05" class="form-label">Telefono</label>
+      <input type="text" class="form-control" id="validationCustom05" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Acepto los terminos y condiciones
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form>
 
-  <br>
-  <br>
-  <br>
-  <br>
+<br>
+<br>
 
   <!-- FOOTER -->
   
