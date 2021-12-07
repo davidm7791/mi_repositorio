@@ -33,21 +33,6 @@ header {
   background-attachment: fixed;
   position: relative; }
 
-nav {
-  text-align: right;
-  padding: 30px 50px 0 0;
-  font-size: 23px; }
-
-nav > a {
-  color: #fff;
-  font-weight: 300;
-  text-decoration: none;
-  margin-right: 10px; }
-
-nav > a:hover {
-  text-decoration: none;
-  color: blueviolet; }
-
 header .textos-header {
   display: flex;
   height: 430px;
@@ -70,6 +55,12 @@ header .textos-header {
   position: absolute;
   bottom: 0;
   width: 100%; }
+
+.imagenlogo {
+  width: 3rem; }
+
+.nav-link .active {
+  color: #642a73; }
 
 /* Nuestros servicios */
 main .sobre-nosotros {
@@ -95,15 +86,13 @@ main .sobre-nosotros {
   display: inline-block;
   text-align: center;
   width: 30px;
-  height: 30px;
   padding: 2px;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
   margin-right: 5px; }
 
 .contenido-textos p {
   padding: 0px 0px 30px 15px;
-  font-weight: 300;
-  text-align: justify; }
+  font-weight: 300; }
 
 /* Portafolio */
 .portafolio {
@@ -158,16 +147,15 @@ main .sobre-nosotros {
 .cards .card {
   background: #4d0686;
   display: flex;
-  width: 46%;
-  height: 200px;
+  width: 40%;
+  height: auto;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 5px;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6); }
 
 .cards .card img {
-  width: 100px;
-  height: 100px;
+  width: 25%;
   object-fit: cover;
   border: 3px solid #fff;
   border-radius: 50%;
@@ -196,14 +184,14 @@ main .sobre-nosotros {
   text-align: center; }
 
 .servicio-ind img {
-  width: 90%; }
+  width: 100%; }
 
 .servicio-ind h3 {
   margin: 10px 0; }
 
 .servicio-ind p {
   font-weight: 300;
-  text-align: justify; }
+  text-align: center; }
 
 /* footer */
 footer {
@@ -211,26 +199,22 @@ footer {
   padding: 60px 0 30px 0;
   margin: auto;
   overflow: hidden; }
-
-.contenedorfooter {
-  display: flex;
-  width: 90%;
-  justify-content: space-evenly;
-  margin: auto;
-  padding-bottom: 50px;
-  border-bottom: 1px solid #ccc; }
-
-.footerelement {
-  text-align: center; }
-
-.footerelement__textos {
-  color: #fff;
-  border-bottom: 3px solid #af20d3;
-  padding-bottom: 5px;
-  margin-bottom: 10px; }
-
-.footerelement__parrafo {
-  color: #ccc; }
+  footer .contenedorfooter {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc; }
+  footer .footerelement {
+    text-align: center; }
+    footer .footerelement .footerelement__textos {
+      color: #fff;
+      border-bottom: 3px solid #af20d3;
+      padding-bottom: 5px;
+      margin-bottom: 10px; }
+    footer .footerelement .footerelement__parrafo {
+      color: #ccc; }
 
 .redes {
   height: 200px;
@@ -358,3 +342,8 @@ footer {
   display: flex;
   display: inline-block;
   max-width: 900px; }
+
+/* seccion ambientes */
+.imagen-ambiente {
+  width: 85%;
+  margin-left: 2rem; }
