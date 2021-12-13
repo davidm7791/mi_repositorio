@@ -196,7 +196,7 @@ main .sobre-nosotros {
 /* footer */
 footer {
   background: #414141;
-  padding: 60px 0 30px 0;
+  padding: 20px 0 20px 0;
   margin: auto;
   overflow: hidden; }
   footer .contenedorfooter {
@@ -204,7 +204,7 @@ footer {
     width: 90%;
     justify-content: space-evenly;
     margin: auto;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #ccc; }
   footer .footerelement {
     text-align: center; }
@@ -333,10 +333,16 @@ footer {
   text-align: center; }
 
 .contenedorgaleria__titulo {
-  font-size: 35px; }
+  color: #642a73;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px; }
 
 .contenedorgaleria__texto {
-  font-size: 25px; }
+  color: #642a73;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px; }
 
 .contenedorgaleria__imagenes {
   display: flex;

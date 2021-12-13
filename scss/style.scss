@@ -1,6 +1,5 @@
 @import "variables";
 @import "tipografias";
-@import "estructura";
 
 
 *{
@@ -246,7 +245,7 @@ main .sobre-nosotros{
 
 footer{
     background: #414141;
-    padding: 60px 0 30px 0;
+    padding: 20px 0 20px 0;
     margin: auto;
     overflow: hidden;
     .contenedorfooter{
@@ -254,7 +253,7 @@ footer{
         width: 90%;
         justify-content: space-evenly;
         margin: auto;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
         border-bottom: 1px solid #ccc;
     }
     .footerelement{
@@ -458,11 +457,18 @@ footer{
 }
 
 .contenedorgaleria__titulo{
-    font-size: 35px;
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px
 }
 
+
 .contenedorgaleria__texto{
-    font-size: 25px;
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px
 }
 
 .contenedorgaleria__imagenes{
